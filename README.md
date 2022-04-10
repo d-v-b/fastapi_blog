@@ -1,0 +1,1 @@
+Learning me a fastapi-based blog. Tutorial [here](https://pneuma.hashnode.dev/building-a-blog-with-fastapi-mysql-sqlalchemy-and-alembic)
