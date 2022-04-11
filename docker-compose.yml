@@ -2,12 +2,13 @@ version: '3'
 
 services:
   db:
-    image: mysql:8.0.28
+    image: mysql:latest
     restart: always
+    ports:
+      -  3306:3306
     volumes:
       - ./data/db:/var/lib/mysql
     environment:
       - MYSQL_ROOT_PASSWORD=admin
-      - MYSQL_DATABASE=db
-      - MYSQL_USER=admin
+      - MYSQL_DATABASE=fastapi_blog
       - MYSQL_PASSWORD=admin
